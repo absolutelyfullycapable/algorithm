@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Q 1008 - 사칙연산</title>
+    </head>
+
+    <body>
+        <script>
+            // Q. 두 정수 A와 B를 입력받은 다음, A/B를 출력하는 프로그램을 작성하시오.
+            var a = parseInt(prompt('첫 번째 숫자를 입력해 주세요.'));
+            if(a <= 0) {
+                alert('0보다 큰 숫자를 입력해 주세요.');
+                window.location.reload();
+            } else {
+                var b = parseInt(prompt('두 번째 숫자를 입력해 주세요.'));
+                if(b >= 10) {
+                    alert('10보다 작은 숫자를 입력해 주세요.');
+                    window.location.reload();
+                }
+            }
+            console.log(a / b);
+        </script>
+    </body>
+</html>
