@@ -30,6 +30,6 @@ function sumMatrix(A, B) {
 }
 
 // 인상 깊은 다른 풀이 2 (1의 간단 버전 같당.. 이렇게 짧아질 수 있다니 !! 😭)
-function sumMatrix(A, B){
+function sumMatrix(A, B) {
   return A.map((a,i) => a.map((b, j) => b + B[i][j]));
 }
