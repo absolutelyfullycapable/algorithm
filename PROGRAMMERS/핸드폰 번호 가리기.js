@@ -9,10 +9,18 @@ function solutuion(phone_number) {
   return phone_number;
 }
 
-// 인상 깊은 다른 풀이 1 (정규식..!! .. 😱)
+// 인상 깊은 다른 풀이 1 (정규표현식..!! .. 😱)
 function hide_numbers(s) {
   return s.replace(/\d(?=\d{4})/g, "*");
 }
+
+/*
+\d => 숫자 문자에 대응됨
+(?=) => 전방 탐색 (Positive lookahead)
+{} => 횟수 또는 범위를 나타냄
+
+\d(?=\d{4}) => 마지막 네 개의 숫자의 앞에 있는 모든 숫자에 대응
+*/
 
 // 인상 깊은 다른 풀이 2 (repeat 메소드)
 function hide_numbers(s){
