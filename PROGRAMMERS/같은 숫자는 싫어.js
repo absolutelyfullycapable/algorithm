@@ -8,7 +8,7 @@
 
 // 내 풀이
 function solution(arr) {
-  let answer = [];
+  const answer = [];
   let num = 1;
 
   answer[0] = arr[0];
